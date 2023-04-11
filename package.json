@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "type": "module",
   "bin": {
-     "brain-games": "bin/brain-games.js"
+    "brain-games": "bin/brain-games.js"
   },
   "description": "My first project",
   "main": "index.js",
@@ -20,5 +20,8 @@
     "eslint": "^8.38.0",
     "eslint-config-airbnb-base": "^15.0.0",
     "eslint-plugin-import": "^2.27.5"
+  },
+  "dependencies": {
+    "readline-sync": "^1.4.10"
   }
 }
