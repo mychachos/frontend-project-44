@@ -1,1 +1,2 @@
-export const getRandomNumbers = (min, max) => Math.floor(Math.random() * (max - min + 1)) + min;
+const getRandomNumbers = () => Math.round(Math.random() * 100);
+export default getRandomNumbers;
