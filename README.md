@@ -5,4 +5,4 @@
 
 [![asciicast](https://asciinema.org/a/577926.svg)](https://asciinema.org/a/577926)
 
-<script async id="asciicast-578369" src="https://asciinema.org/a/578369.js"></script>
+[![asciicast](https://asciinema.org/a/578369.svg)](https://asciinema.org/a/578369)
