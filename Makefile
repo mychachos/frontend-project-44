@@ -21,3 +21,6 @@ lint:
 
 fix:
 	npx eslint --fix .
+
+record:
+	asciinema rec
