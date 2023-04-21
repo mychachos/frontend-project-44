@@ -1,8 +1,11 @@
-### Hexlet tests and linter status:
+## My first project with Hexlet
 [![Actions Status](https://github.com/mychachos/frontend-project-44/workflows/hexlet-check/badge.svg)](https://github.com/mychachos/frontend-project-44/actions)
 
 <a href="https://codeclimate.com/github/mychachos/frontend-project-44/maintainability"><img src="https://api.codeclimate.com/v1/badges/7dd3974921021c4a5fee/maintainability" /></a>
 
+#### Game: is the nimber even?
+##### Installation: `npm link`
+##### Start: brain-even
 [![asciicast](https://asciinema.org/a/577926.svg)](https://asciinema.org/a/577926)
 
 [![asciicast](https://asciinema.org/a/578369.svg)](https://asciinema.org/a/578369)
