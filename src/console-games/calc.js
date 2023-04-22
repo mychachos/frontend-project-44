@@ -1,7 +1,7 @@
 import getRandomNumber from '../randomNum.js';
 import gameLogic from '../index.js';
 
-const calculator = () => {
+const calcGame = () => {
   const operators = ['+', '-', '*'];
   const randomIndex = Math.round(Math.random() * 2);
   const randomOperator = operators[randomIndex];
@@ -29,5 +29,5 @@ const calculator = () => {
 
 export default () => {
   const taskOfCalc = 'What is the result of the expression?';
-  return gameLogic(taskOfCalc, calculator);
+  return gameLogic(taskOfCalc, calcGame);
 };

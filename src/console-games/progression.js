@@ -1,8 +1,8 @@
 import gameLogic from '../index.js';
 import getRandomNumber from '../randomNum.js';
 
-const getProgression = () => {
-  const getNumbers = () => {
+const progressionGame = () => {
+  const getNumbersProgression = () => {
     const startProgression = getRandomNumber();
     const randomInterval = Math.round(Math.random() * 3) + 2;
     const result = [];
@@ -12,7 +12,7 @@ const getProgression = () => {
     return result;
   };
 
-  const numbers = getNumbers();
+  const numbers = getNumbersProgression();
   const randomIndex = Math.round(Math.random() * 9);
   const expectedAnswer = numbers[randomIndex];
 
@@ -28,6 +28,5 @@ const getProgression = () => {
 
 export default () => {
   const taskOfProgression = 'What number is missing in the progression?';
-
-  return gameLogic(taskOfProgression, getProgression);
+  return gameLogic(taskOfProgression, progressionGame);
 };

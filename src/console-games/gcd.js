@@ -1,4 +1,6 @@
+/* eslint-disable no-param-reassign */
 /* eslint-disable operator-assignment */
+
 import getRandomNumber from '../randomNum.js';
 import gameLogic from '../index.js';
 
@@ -13,7 +15,7 @@ const commonDivider = (num1, num2) => {
   return num1 + num2;
 };
 
-const gcd = () => {
+const gcdGame = () => {
   const firstNum = getRandomNumber();
   const secondNum = getRandomNumber();
   const taskNumbers = `${firstNum} ${secondNum}`;
@@ -24,5 +26,5 @@ const gcd = () => {
 
 export default () => {
   const taskOfGcd = 'Find the greatest common divisor of given numbers.';
-  return gameLogic(taskOfGcd, gcd);
+  return gameLogic(taskOfGcd, gcdGame);
 };
