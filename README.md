@@ -1,8 +1,10 @@
 # My first project with [Hexlet](https://ru.hexlet.io/my)
 [![Actions Status](https://github.com/mychachos/frontend-project-44/workflows/hexlet-check/badge.svg)](https://github.com/mychachos/frontend-project-44/actions)
 <a href="https://codeclimate.com/github/mychachos/frontend-project-44/maintainability"><img src="https://api.codeclimate.com/v1/badges/7dd3974921021c4a5fee/maintainability" /></a>
+## 1. Discription:
+A console game consisting of 5 mini-games. Each game consists of 3 round. To win you need to answer correctly in all 3 rounds, if the answer is wrong, the game ends
 
-## 1. Intallation:
+## 2. Intallation:
 ```
 git clone git@github.com:mychachos/frontend-project-44.git
 ```
@@ -13,7 +15,7 @@ make install
 npm link
 ```
 
-## 2. Demonstration:
+## 3. Demonstration:
 
 ```
 brain-even
