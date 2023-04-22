@@ -2,7 +2,7 @@ import gameLogic from '../index.js';
 import getRandomNumber from '../randomNum.js';
 
 const progressionGame = () => {
-  const getNumbersProgression = () => {
+  const getProgressionNumbers = () => {
     const startProgression = getRandomNumber();
     const randomInterval = Math.round(Math.random() * 3) + 2;
     const result = [];
@@ -12,7 +12,7 @@ const progressionGame = () => {
     return result;
   };
 
-  const numbers = getNumbersProgression();
+  const numbers = getProgressionNumbers();
   const randomIndex = Math.round(Math.random() * 9);
   const expectedAnswer = numbers[randomIndex];
 
