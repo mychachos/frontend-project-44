@@ -5,7 +5,9 @@
 A console game consisting of 5 mini-games. Each game consists of 3 round. To win you need to answer correctly in all 3 rounds, if the answer is wrong, the game ends
 
 ## 2. Requirements
-nodejs 19.8.1
+`Nodejs 19.8.1 ✔`
+
+![nodejs](https://cdn.icon-icons.com/icons2/2530/PNG/128/nodejs_button_icon_151951.png) 
 
 ## 3. Intallation:
 ```
