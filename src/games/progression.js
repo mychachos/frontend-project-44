@@ -1,29 +1,22 @@
 import gameLogic from '../index.js';
-import getRandomNumber from '../randomNum.js';
+import getRandomNumber from '../utils.js';
+
+const getProgressionNumbers = () => {
+  const startProgression = getRandomNumber(1, 50);
+  const randomInterval = getRandomNumber(1, 5);
+  const result = [];
+  for (let i = startProgression; result.length < 10; i += randomInterval) {
+    result.push(i);
+  }
+  return result;
+};
 
 const progressionGame = () => {
-  const getProgressionNumbers = () => {
-    const startProgression = getRandomNumber();
-    const randomInterval = Math.round(Math.random() * 3) + 2;
-    const result = [];
-    for (let i = startProgression; result.length < 10; i += randomInterval) {
-      result.push(i);
-    }
-    return result;
-  };
-
+  const randomIndex = getRandomNumber(0, 8);
   const numbers = getProgressionNumbers();
-  const randomIndex = Math.round(Math.random() * 9);
   const expectedAnswer = numbers[randomIndex];
-
-  const expression = () => {
-    if (numbers.includes(numbers[randomIndex])) {
-      numbers[randomIndex] = '..';
-    }
-    return numbers.join(' ');
-  };
-
-  return [expression(), String(expectedAnswer)];
+  const expression = String(numbers.join(' ')).replace(expectedAnswer, '..');
+  return [expression, String(expectedAnswer)];
 };
 
 export default () => {

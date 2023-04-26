@@ -1,15 +1,14 @@
-import getRandomNumber from '../randomNum.js';
+/* eslint-disable no-fallthrough */
+import getRandomNumber from '../utils.js';
 import gameLogic from '../index.js';
 
 const calcGame = () => {
+  const firstNum = getRandomNumber(1, 50);
+  const secondNum = getRandomNumber(1, 50);
   const operators = ['+', '-', '*'];
-  const randomIndex = Math.round(Math.random() * 2);
+  const randomIndex = getRandomNumber(0, 1);
   const randomOperator = operators[randomIndex];
-
-  const firstNum = getRandomNumber();
-  const secondNum = getRandomNumber();
   const expression = `${firstNum} ${randomOperator} ${secondNum}`;
-
   let expectedAnswer;
 
   switch (randomOperator) {
@@ -23,6 +22,7 @@ const calcGame = () => {
       expectedAnswer = firstNum * secondNum;
       break;
     default:
+      break;
   }
   return [expression, String(expectedAnswer)];
 };

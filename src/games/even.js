@@ -1,11 +1,11 @@
-import getRandomNumbers from '../randomNum.js';
+import getRandomNumbers from '../utils.js';
 import gameLogic from '../index.js';
 
-const evenGame = () => {
-  const isEvenNum = (num) => num % 2 === 0;
-  const taskNumber = getRandomNumbers();
-  const expectedAnswer = isEvenNum(taskNumber) ? 'yes' : 'no';
+const isEvenNum = (num) => num % 2 === 0;
 
+const evenGame = () => {
+  const taskNumber = getRandomNumbers(1, 50);
+  const expectedAnswer = isEvenNum(taskNumber) ? 'yes' : 'no';
   return [taskNumber, expectedAnswer];
 };
 
