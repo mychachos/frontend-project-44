@@ -1,4 +1,4 @@
-/*eslint no-param-reassign: "error"*/
+/* eslint-disable no-param-reassign */
 import getRandomNumber from '../utils.js';
 import gameLogic from '../index.js';
 
