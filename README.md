@@ -4,7 +4,10 @@
 ## 1. Discription:
 A console game consisting of 5 mini-games. Each game consists of 3 round. To win you need to answer correctly in all 3 rounds, if the answer is wrong, the game ends
 
-## 2. Intallation:
+## 2. Requirements
+nodejs 19.8.1
+
+## 3. Intallation:
 ```
 git clone git@github.com:mychachos/frontend-project-44.git
 ```
@@ -12,10 +15,10 @@ git clone git@github.com:mychachos/frontend-project-44.git
 make install
 ```
 ```
-npm link
+npm install
 ```
 
-## 3. Demonstration:
+## 4. Demonstration:
 
 ```
 brain-even
