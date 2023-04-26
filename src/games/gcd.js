@@ -16,9 +16,9 @@ const commonDivider = (num1, num2) => {
 const gcdGame = () => {
   const firstNum = getRandomNumber(1, 50);
   const secondNum = getRandomNumber(1, 50);
-  const taskNumbers = `${firstNum} ${secondNum}`;
+  const expression = `${firstNum} ${secondNum}`;
   const expectedAnswer = commonDivider(firstNum, secondNum);
-  return [taskNumbers, String(expectedAnswer)];
+  return [expression, String(expectedAnswer)];
 };
 
 export default () => {

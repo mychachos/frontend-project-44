@@ -1,7 +1,19 @@
-/* eslint-disable no-fallthrough */
+/* eslint-disable consistent-return */
 import getRandomNumber from '../utils.js';
 import gameLogic from '../index.js';
 
+const calculator = (num1, num2, operator) => {
+  switch (operator) {
+    case '+':
+      return num1 + num2;
+    case '-':
+      return num1 - num2;
+    case '*':
+      return num1 * num2;
+    default:
+      break;
+  }
+};
 const calcGame = () => {
   const firstNum = getRandomNumber(1, 50);
   const secondNum = getRandomNumber(1, 50);
@@ -9,21 +21,7 @@ const calcGame = () => {
   const randomIndex = getRandomNumber(0, 1);
   const randomOperator = operators[randomIndex];
   const expression = `${firstNum} ${randomOperator} ${secondNum}`;
-  let expectedAnswer;
-
-  switch (randomOperator) {
-    case '+':
-      expectedAnswer = firstNum + secondNum;
-      break;
-    case '-':
-      expectedAnswer = firstNum - secondNum;
-      break;
-    case '*':
-      expectedAnswer = firstNum * secondNum;
-      break;
-    default:
-      break;
-  }
+  const expectedAnswer = calculator(firstNum, secondNum, randomOperator);
   return [expression, String(expectedAnswer)];
 };
 
