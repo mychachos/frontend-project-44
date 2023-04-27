@@ -1,4 +1,3 @@
-/* eslint-disable consistent-return */
 import getRandomNumber from '../utils.js';
 import gameLogic from '../index.js';
 

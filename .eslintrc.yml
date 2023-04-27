@@ -12,4 +12,6 @@ parserOptions:
 rules: {
   no-console: 0,
   import/extensions: 0,
+  consistent-return: off,
+  no-param-reassign: 0
 }
