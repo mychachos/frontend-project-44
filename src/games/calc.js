@@ -1,6 +1,7 @@
 import getRandomNumber from '../utils.js';
 import gameLogic from '../index.js';
 
+// eslint-disable-next-line consistent-return
 const calculator = (num1, num2, operator) => {
   switch (operator) {
     case '+':

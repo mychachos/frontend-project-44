@@ -2,14 +2,16 @@ import getRandomNumber from '../utils.js';
 import gameLogic from '../index.js';
 
 const commonDivider = (num1, num2) => {
-  while (num1 !== 0 && num2 !== 0) {
-    if (Math.abs(num1) > (Math.abs(num2))) {
-      num1 %= num2;
+  let number1 = num1;
+  let number2 = num2;
+  while (number1 !== 0 && number2 !== 0) {
+    if (Math.abs(number1) > (Math.abs(number2))) {
+      number1 %= number2;
     } else {
-      num2 %= num1;
+      number2 %= number1;
     }
   }
-  return num1 + num2;
+  return number1 + number2;
 };
 
 const gcdGame = () => {
