@@ -7,8 +7,6 @@ A console game consisting of 5 mini-games. Each game consists of 3 round. To win
 ## 2. Requirements
 `Nodejs 19.8.1 ✔`
 
-![nodejs](https://cdn.icon-icons.com/icons2/2530/PNG/128/nodejs_button_icon_151951.png) 
-
 ## 3. Intallation:
 ```
 git clone git@github.com:mychachos/frontend-project-44.git
